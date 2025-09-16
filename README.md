@@ -73,8 +73,8 @@ pip install customtkinter mysql-connector-python
 (On some systems use: py -m pip install ...)
 
 3️⃣ Set Up the MySQL Database
-mysql -u root -p
-# Enter your MySQL password
+mysql -u root -p 
+Enter your MySQL password
 mysql> SOURCE /path/to/your/project/folder/setup.sql;
 
 
