@@ -16,8 +16,6 @@ This system provides a complete solution with role-based access for administrato
 
 🛠 Technologies Used
 
-🖼 Screenshots
-
 📋 Prerequisites
 
 ⚙️ Setup and Installation
@@ -56,11 +54,6 @@ Backend	Python
 Database	MySQL
 GUI Framework	CustomTkinter
 Connector	mysql-connector-python
-🖼 Screenshots
-Admin Dashboard	Client Dashboard
-(Add Screenshot Here)	(Add Screenshot Here)
-
-💡 Tip: Add screenshots in the assets/ folder and reference them here with ![Alt Text](assets/screenshot.png).
 
 📋 Prerequisites
 
@@ -124,6 +117,9 @@ Role	Username	Password
 Admin	admin	admin123
 Employee	employee1	emp123
 Client	client1	client123
+
+
+
 📂 Project Structure
 CourierManagementSystem/
 ├── main.py               # Main application controller
