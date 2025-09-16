@@ -1,56 +1,68 @@
 📦 Courier Management System
 
+
+
+
+
+
+
+
 A modern, user-friendly desktop application for managing courier services, built with Python, CustomTkinter, and MySQL.
 This system provides a complete solution with role-based access for administrators, employees, and clients — all within a single, seamless interface.
 
 📑 Table of Contents
 
-Key Features
-
-Technologies Used
-
-Screenshots
-
-Prerequisites
-
-Setup and Installation
-
-How to Use
-
-Default Login Credentials
-
-Project Structure
-
-🚀 Key Features
-
-✅ Modern & Intuitive GUI – Visually appealing interface built with CustomTkinter
-✅ Unified Single-Window Interface – Seamless navigation between pages
-✅ Role-Based Access Control
-
-Admin Dashboard – Manage users (CRUD) & view all courier records
-
-Employee Dashboard – View & update status of assigned couriers
-
-Client Dashboard – Book shipments & track existing ones
-✅ Secure User Authentication – Separate login & registration for each role
-✅ Complete Courier Management – Full CRUD operations on courier data
-✅ Persistent Data Storage – MySQL backend to store user data & tracking history
-✅ Styled & Themed Interface – Light/Dark theme support with consistent widget styling
+✨ Key Features
 
 🛠 Technologies Used
 
-Backend: Python
-
-Database: MySQL
-
-GUI Framework: CustomTkinter
-
-Connector: mysql-connector-python
-
+🖼 Screenshots
 
 📋 Prerequisites
 
-Before you begin, make sure you have:
+⚙️ Setup and Installation
+
+🖱 How to Use
+
+🔑 Default Login Credentials
+
+📂 Project Structure
+
+✨ Key Features
+
+Modern & Intuitive GUI – Built with CustomTkinter for a clean, elegant interface
+
+Unified Single-Window Interface – Smooth navigation across all pages
+
+Role-Based Access Control
+
+👑 Admin Dashboard: Manage users (CRUD), view courier records
+
+👷 Employee Dashboard: View/update assigned couriers' status
+
+👤 Client Dashboard: Book shipments & track them
+
+Secure User Authentication – Login/Registration for each role
+
+Complete Courier Management – Full CRUD functionality
+
+MySQL-Powered Backend – Stores users, couriers, and tracking history
+
+Dark/Light Theme Support – Consistent, professional look
+
+🛠 Technologies Used
+Layer	Technology
+Backend	Python
+Database	MySQL
+GUI Framework	CustomTkinter
+Connector	mysql-connector-python
+🖼 Screenshots
+Admin Dashboard	Client Dashboard
+(Add Screenshot Here)	(Add Screenshot Here)
+
+💡 Tip: Add screenshots in the assets/ folder and reference them here with ![Alt Text](assets/screenshot.png).
+
+📋 Prerequisites
 
 Python 3.7+
 
@@ -62,22 +74,14 @@ git clone <your-repository-url>
 cd CourierManagementSystem
 
 2️⃣ Install Required Python Libraries
-pip install customtkinter
-pip install mysql-connector-python
+pip install customtkinter mysql-connector-python
 
 
-(You can also use: py -m pip install ... if needed)
+(On some systems use: py -m pip install ...)
 
 3️⃣ Set Up the MySQL Database
-
-Start MySQL Server
-
-Log in to MySQL client (CLI or MySQL Workbench)
-
-Run the provided setup.sql script:
-
 mysql -u root -p
-# Enter your password
+# Enter your MySQL password
 mysql> SOURCE /path/to/your/project/folder/setup.sql;
 
 
@@ -88,35 +92,32 @@ This will:
 
 4️⃣ Configure Database Connection
 
-Edit database.py and update your MySQL credentials:
+Edit database.py:
 
-# Inside database.py
 connection = mysql.connector.connect(
-    host='localhost',       # Your MySQL host (usually 'localhost')
+    host='localhost',       # MySQL host (default: localhost)
     database='courier_db',
     user='root',            # Your MySQL username
-    password='your_password'  # Change to your MySQL password
+    password='your_password'  # Change this to your MySQL password
 )
 
 5️⃣ Run the Application
 python main.py
 
-
-You should now see the Login Window.
-
 🖱 How to Use
 
-Run main.py to launch the app
+Run main.py
 
-Login or Register
+Login/Register
 
-Use default credentials (see below) OR
+Use default credentials
+ OR
 
-Click "Register Here" to create a new client/employee account
+Register as a new client/employee
 
-Navigate Dashboard based on your role
+Explore Dashboards (Admin/Employee/Client based on role)
 
-Logout securely using the sidebar logout button
+Logout securely via the sidebar
 
 🔑 Default Login Credentials
 Role	Username	Password
@@ -125,11 +126,11 @@ Employee	employee1	emp123
 Client	client1	client123
 📂 Project Structure
 CourierManagementSystem/
-├── main.py               # Main application controller, manages frames
-├── database.py           # Handles all MySQL database connections and queries
-├── login_view.py         # Contains the Login and Registration frames
-├── admin_view.py         # The dashboard frame for the Admin role
-├── employee_view.py      # The dashboard frame for the Employee role
-├── client_view.py        # The dashboard frame for the Client role
-├── setup.sql             # SQL script to initialize the database and tables
-└── README.md             # This file
+├── main.py               # Main application controller
+├── database.py           # Handles all MySQL database operations
+├── login_view.py         # Login & Registration frames
+├── admin_view.py         # Admin dashboard
+├── employee_view.py      # Employee dashboard
+├── client_view.py        # Client dashboard
+├── setup.sql             # Database initialization script
+└── README.md             # Project documentation
